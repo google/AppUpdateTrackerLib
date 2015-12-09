@@ -22,7 +22,7 @@ Usage
  }  
  dependencies {  
  ....  
-     compile(name: 'AppUpdateTracker-release-1.0.1', ext: 'aar')  
+     compile(name: 'trackerLib-release-1.0.1', ext: 'aar')  
      compile 'com.google.android.gms:play-services:8.3.0'  
  ....  
  }  
@@ -40,7 +40,7 @@ It has two static api methods:
 2. PingAdwordsUtil.onResumePingIfAppUpdate(...)  
    This method checks if app update has happened.   
    If so, pings adwords to report conversion.  
-   It is intended to be called upon onResume(..) of parent apps main activity.
+   It should be called at onResume(..) of app's main activity.   
    
 Also a utility android Activity 'DeepLinkTrackerActivity' is created.  
  Upon app update ad-click, if a deeplink is fired then DeepLinkTrackerActivity can be called.  
