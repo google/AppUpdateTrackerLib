@@ -46,3 +46,11 @@ Also a utility android Activity 'DeepLinkTrackerActivity' is created.
  Upon app update ad-click, if a deeplink is fired then DeepLinkTrackerActivity can be called.  
  It will store referer and forward call to playstore.  
  Later when PingAdwordsUtil.onResumePingIfAppUpdate(..) will be invoked, the referer will be used for adwords attribution.
+ 
+# Copyright Notice
+
+Copyright (C) 2013-2015 Google Inc., authors, and contributors (see the AUTHORS
+file).  
+Licensed under the [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+license (see the LICENSE file).  
+**This is not an official Google product.**
