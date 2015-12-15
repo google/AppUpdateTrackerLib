@@ -3,5 +3,3 @@
 # repository.
 
 Google Inc.
- Shashank Agarwal
- Anant Damle
