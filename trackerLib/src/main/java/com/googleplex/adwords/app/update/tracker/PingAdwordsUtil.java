@@ -44,7 +44,7 @@ public class PingAdwordsUtil
 
         if (oldAppVersion < newAppversion)
         {
-            mPrefs.edit().putInt(APP_UPD_PREF, newAppversion);
+            mPrefs.edit().putInt(APP_UPD_PREF, newAppversion).commit();
 
             AsyncTask.execute(new Runnable()
             {
@@ -69,6 +69,7 @@ public class PingAdwordsUtil
         SharedPreferences mPrefs = context.getSharedPreferences(SHARED_PREF_KEY, Context.MODE_PRIVATE);
         mPrefs.edit().putString(REFF_PREF, referer);
         mPrefs.edit().putInt(APP_UPD_PREF, getAppVersion(context));
+        mPrefs.edit().commit();
     }
 
     static ConversionParameters makeConversionParameters(Context context, String conversionId, String label, String referer)
