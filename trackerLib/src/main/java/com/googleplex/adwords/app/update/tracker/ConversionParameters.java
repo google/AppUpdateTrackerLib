@@ -108,7 +108,7 @@ public class ConversionParameters
 
         Uri.Builder awUri = Uri.parse(ADWORD_URL).buildUpon();
 
-        awUri.appendPath(conversionId).appendQueryParameter("label", label);
+        awUri.appendPath(conversionId + "/").appendQueryParameter("label", label);
 
         if (adid != null) awUri.appendQueryParameter("rdid", adid).appendQueryParameter("idtype", "advertisingid");
         if (bundleId != null) awUri.appendQueryParameter("bundleid", bundleId);
